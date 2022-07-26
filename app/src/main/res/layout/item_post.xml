@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:background="@drawable/item_post_bg">
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imgProfile"
+        android:src="@drawable/ic_baseline_person_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:civ_border_color="#3f51b5"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="5dp"
+        app:civ_shadow_color="#3f51b5"/>
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Azoz Mohammed"
+        app:layout_constraintStart_toEndOf="@id/imgProfile"
+        app:layout_constraintTop_toTopOf="@id/imgProfile"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="25/7/2030"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/imgProfile"
+        app:layout_constraintStart_toEndOf="@id/imgProfile"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <ImageButton
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/date"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_baseline_share_24"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"/>
+
+    <ImageView
+        android:id="@+id/imgPost"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/item_post_bg"
+        android:scaleType="centerCrop"
+        android:src="@drawable/app"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/imgProfile"
+        app:layout_constraintTop_toBottomOf="@id/imgProfile"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
