@@ -16,9 +16,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val itemsList : MutableList<HomeItem<Any>> = mutableListOf()
-        itemsList.add(HomeItem(DataSource.getPost(),HomeItemType.TYPE_STORIES))
+        itemsList.add(HomeItem(getStories(),HomeItemType.TYPE_STORIES))
         itemsList.add(HomeItem("Update Your Post",HomeItemType.TYPE_NEW_POST))
-        itemsList.addAll(DataSource.getPost().map { it.toHomeItem() })
+        itemsList.addAll(getPost().map { it.toHomeItem() })
         adapter = HomeAdapter(itemsList)
         binding.recyclerViewBase.adapter = adapter
     }
