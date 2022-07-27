@@ -23,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
+
         android:text="Azoz Mohammed"
         app:layout_constraintStart_toEndOf="@id/imgProfile"
         app:layout_constraintTop_toTopOf="@id/imgProfile"
@@ -38,6 +39,7 @@
         android:layout_marginBottom="16dp"
         android:text="25/7/2030"
         android:textSize="20sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/imgProfile"
         app:layout_constraintStart_toEndOf="@id/imgProfile"
         app:layout_constraintTop_toBottomOf="@+id/nameText" />
@@ -46,10 +48,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/date"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#89CFF0"
         android:src="@drawable/ic_baseline_share_24"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"/>
 
     <ImageView
